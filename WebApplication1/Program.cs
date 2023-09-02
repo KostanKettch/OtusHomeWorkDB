@@ -1,5 +1,11 @@
+using Microsoft.EntityFrameworkCore;
 using OtusHomeWorkDB.Domain;
 using OtusHomeWorkDB.Domain.Entity;
+
+
+
+using (DataContext db = new DataContext())
+    db.Database.Migrate();
 
 
 using (DataContext db = new DataContext())

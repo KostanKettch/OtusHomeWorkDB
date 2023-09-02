@@ -9,7 +9,7 @@ namespace OtusHomeWorkDB.Domain
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            Database.EnsureCreated();
+    //        Database.EnsureCreated();
         }
 
         public DbSet<User> users { get; set; } = null!;
